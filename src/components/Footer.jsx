@@ -8,8 +8,8 @@ export default function Footer() {
                 <h5>John Doe</h5>
                 <address>
                     <ul>
-                        <li>40 rue Laure Diebold
-                        69009 Lyon, France</li>
+                        <li>40 rue Laure Diebold</li>
+                        <li>69009 Lyon, France</li>
                         <li>10 20 30 40 50</li>
                         <li>john.doe@gmail.com</li>
                     </ul>

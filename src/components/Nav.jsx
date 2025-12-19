@@ -14,7 +14,7 @@ export default function Nav() {
             <Link to="/services">Offres de Services</Link>
           </li>
           <li>
-            <Link to="/projects">Mes Réalisations</Link>
+            <Link to="/portfolio">Mes Réalisations</Link>
           </li>
           <li>
             <Link to="/contact">Me contacter</Link>
