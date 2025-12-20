@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <header>
       <nav>
-        <a>John Doe</a>
+        <Link to="/">John Doe</Link>
         <ul>
           <li>
             <Link to="/">Accueil</Link>
