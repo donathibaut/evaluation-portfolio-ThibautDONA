@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <header>
       <nav>
-        <a>John Doe</a>
+        <Link to="/">John Doe</Link>
         <ul>
           <li>
             <Link to="/">Accueil</Link>
@@ -20,7 +20,7 @@ export default function Nav() {
             <Link to="/contact">Me contacter</Link>
           </li>
           <li>
-            <Link to="/mentions-legales">Mentions Légales</Link>
+            <Link to="/mentions-legales" rel="noindex">Mentions Légales</Link>
           </li>
         </ul>
       </nav>
