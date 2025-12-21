@@ -1,52 +1,103 @@
+import freshFood from "../assets/img/portfolio/fresh-food.jpg";
+import akira from "../assets/img/portfolio/restaurant-japonais.jpg";
+import bienEtre from "../assets/img/portfolio/espace-bien-etre.jpg";
+import seo from "../assets/img/portfolio/seo.jpg";
+import createApi from "../assets/img/portfolio/coder.jpg";
+import maquetteFigma from "../assets/img/portfolio/screens.jpg";
+
 export default function Projects() {
     return(
-        <main>
+        <main className="text-center">
             <header className="hero-section">
-                <h1>Portfolio</h1>
-                <p>Voici quelques-unes de mes réalisations.</p>
+                <h1 className="hero-section__title">Portfolio</h1>
+                <p className="hero-section__subtitle">Voici quelques-unes de mes réalisations.</p>
+
+                <hr class="border-primary border-5 opacity-100 w-25 mx-auto"></hr>
             </header>
-            <section className="project-section">
-                <div className="project-section__1">
-                    <img src="" alt="Bac de légumes" />
-                    <h2>Fresh Food</h2>
-                    <p>Site de vente de produits frais en ligne</p>
-                    <button>Voir le site</button>
-                    <aside><p>Site réalisé avec PHP et MySQL</p></aside>
+
+            {/* Cards Bootstrap */}
+            <section className="project-section container py-5">
+                <div className="project-section__1 row d-flex justify-content-center g-4 py-2">
+                    <div className="col-md-4">
+                        <div className="fresh-food card">
+                            <img src={freshFood} className="card-img-top" alt="panier de légumes" />
+                            <div className="card-body">
+                                <h2 className="card-title">Fresh Food</h2>
+                                <p className="card-text">Site de vente de produits frais en ligne</p>
+                                <a href="#" className="btn btn-primary" rel="nofollow">Voir le site</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                Site réalisé avec PHP et MySQL
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="akira card">
+                            <img src={akira} className="card-img-top" alt="plats japonais" />
+                            <div className="card-body">
+                                <h2 className="card-title">Restaurant Akira</h2>
+                                <p className="card-text">Site de vente de produits frais en ligne</p>
+                                <a href="#" className="btn btn-primary" rel="nofollow">Voir le site</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                Site réalisé avec WordPress
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="bien-etre card">
+                            <img src={bienEtre} className="card-img-top" alt="statue de Bouddha sur l'eau" />
+                            <div className="card-body">
+                                <h2 className="card-title">Espace bien-être</h2>
+                                <p className="card-text">Site de vente de produits frais en ligne</p>
+                                <a href="#" className="btn btn-primary" rel="nofollow">Voir le site</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                Site réalisé avec LARAVEL
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="project-section__2">
-                    <img src="" alt="Bac de légumes" />
-                    <h2>Restaurant Akira</h2>
-                    <p>Site de vente de produits frais en ligne</p>
-                    <button>Voir le site</button>
-                    <aside><p>Site réalisé avec WordPress</p></aside>
-                </div>
-                <div className="project-section__3">
-                    <img src="" alt="Bac de légumes" />
-                    <h2>Espace bien-être</h2>
-                    <p>Site de vente de produits frais en ligne</p>
-                    <button>Voir le site</button>
-                    <aside><p>Site réalisé avec LARAVEL</p></aside>
-                </div>
-                <div className="project-section__4">
-                    <img src="" alt="Bac de légumes" />
-                    <h2>SEO</h2>
-                    <p>Amélioration du référencement d'un site e-commerce</p>
-                    <button>Voir le site</button>
-                    <aside><p>Utilisation des outils SEO</p></aside>
-                </div>
-                <div className="project-section__5">
-                    <img src="" alt="Bac de légumes" />
-                    <h2>Création d'une API</h2>
-                    <p>Création d'une API RESTFULL publique</p>
-                    <button>Voir le site</button>
-                    <aside><p>PHP - SYMFONY</p></aside>
-                </div>
-                <div className="project-section__6">
-                    <img src="" alt="Bac de légumes" />
-                    <h2>Maquette d'un site web</h2>
-                    <p>Création du prototype d'un site</p>
-                    <button>Voir le site</button>
-                    <aside><p>Réalisé avec FIGMA</p></aside>
+                <div className="project-section__2 row d-flex justify-content-center g-4 py-2">
+                    <div className="col-md-4">
+                        <div className="seo card">
+                            <img src={seo} className="card-img-top" alt="nuage de mots" />
+                            <div className="card-body">
+                                <h2 className="card-title">SEO</h2>
+                                <p className="card-text">Amélioration du référencement d'un site e-commerce</p>
+                                <a href="#" className="btn btn-primary" rel="nofollow">Voir le site</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                Utilisation des outils SEO
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="create-api card">
+                            <img src={createApi} className="card-img-top" alt="lignes de code" />
+                            <div className="card-body">
+                                <h2 className="card-title">Création d'une API</h2>
+                                <p className="card-text">Création d'une API RESTFULL publique</p>
+                                <a href="#" className="btn btn-primary" rel="nofollow">Voir le site</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                PHP - SYMFONY
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="maquette-figma card">
+                            <img src={maquetteFigma} className="card-img-top" alt="matériel informatique" />
+                            <div className="card-body">
+                                <h2 className="card-title">Maquette d'un site web</h2>
+                                <p className="card-text">Création du prototype d'un site</p>
+                                <a href="#" className="btn btn-primary" rel="nofollow">Voir le site</a>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                Réalisé avec FIGMA
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

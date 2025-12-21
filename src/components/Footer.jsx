@@ -26,13 +26,13 @@ export default function Footer() {
                         </li>
                     </ul>
                 </address>
-                <a href="" target="_blank" aria-label="lien github">
+                <a href="https://x.com/johnDoe26676287" target="_blank" rel="nofollow" aria-label="lien github">
                     <i className="bi bi-github"></i>
                 </a>
-                <a href="" target="_blank" aria-label="lien twitter">
+                <a href="https://x.com/johnDoe26676287" target="_blank" rel="nofollow" aria-label="lien twitter">
                     <i className="bi bi-twitter"></i>
                 </a>
-                <a href="" target="_blank" aria-label="lien linkedin">
+                <a href="https://www.linkedin.com/in/john-doe-291a4b309/" target="_blank" rel="nofollow" aria-label="lien linkedin">
                     <i className="bi bi-linkedin"></i>
                 </a>
             </section>
@@ -43,7 +43,7 @@ export default function Footer() {
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/portfolio">Portfolio</Link></li>
                     <li><Link to="/contact">Me contacter</Link></li>
-                    <li><Link to="/mentions-legales">Mentions légales</Link></li>
+                    <li><Link to="/mentions-legales" rel="noindex">Mentions légales</Link></li>
                 </ul>
             </section>
             <section className="footer__projects">

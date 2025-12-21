@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+
 import officePic from "../assets/img/john-doe-about.jpg";
+
+import "../assets/style/Home.css";
 
 export default function Home() {
 
@@ -16,35 +19,37 @@ export default function Home() {
 
     return(
         <main>
-            <header className="hero-section">
-                <h1>Bonjour, je suis John Doe</h1>
-                <h2>Développeur web full stack</h2>
+            <header className="hero-section text-white">
+                <div className="hero-section__head">
+                    <h1>Bonjour, je suis John Doe</h1>
+                    <h2>Développeur web full stack</h2>
 
-                {/* Modale Bootstrap */}
-                <button className="hero-section__modal-button btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#hero-section__modal">
-                    En savoir plus
-                </button>
-                <div className="hero-section__modal modal fade" id="hero-section__modal" tabIndex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                    {/* Modale Bootstrap */}
+                    <button className="head__modal-button btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#head__modal">
+                        En savoir plus
+                    </button>
+                </div>
+                <div className="head__modal modal fade" id="head__modal" tabIndex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered" role="document">
-                        <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="modalLabel">Mon profil GitHub</h5>
-                            <button type="button" className="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            <img src={info.avatar_url} alt="image de profil" />
-                            <ul>
-                                <li><i class="bi bi-person"></i> <a href={info.html_url} target="_blank">{info.name}</a></li>
-                                <li><i class="bi bi-geo-alt"></i> <a href={info.location} target="_blank">{info.location}</a></li>
-                                <li><i class="bi bi-card-text"></i> {info.bio}</li>
-                                <li><i class="bi bi-box"></i> Repositories : {info.public_repos}</li>
-                                <li><i class="bi bi-people"></i> Followers : {info.followers}</li>
-                                <li><i class="bi bi-people"></i> Following : {info.following}</li>
-                            </ul>    
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        </div>
+                        <div className="modal-content bg-dark">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="modalLabel">Mon profil GitHub</h5>
+                                <button type="button" className="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                <img src={info.avatar_url} alt="image de profil" />
+                                <ul>
+                                    <li><i class="bi bi-person"></i> <a href={info.html_url} target="_blank">{info.name}</a></li>
+                                    <li><i class="bi bi-geo-alt"></i> <a href={info.location} target="_blank">{info.location}</a></li>
+                                    <li><i class="bi bi-card-text"></i> {info.bio}</li>
+                                    <li><i class="bi bi-box"></i> Repositories : {info.public_repos}</li>
+                                    <li><i class="bi bi-people"></i> Followers : {info.followers}</li>
+                                    <li><i class="bi bi-people"></i> Following : {info.following}</li>
+                                </ul>    
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
                         </div>
                     </div>
                 </div>

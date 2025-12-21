@@ -8,7 +8,7 @@ import Contact from "./components/Contact.jsx";
 import Legal from "./components/Legal.jsx";
 import Footer from "./components/Footer.jsx";
 
-import "./style.css";
+import "./assets/style/App.css";
 
 export default function App() {
   return (
