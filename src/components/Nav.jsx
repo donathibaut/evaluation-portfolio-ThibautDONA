@@ -2,8 +2,7 @@ import { NavLink } from "react-router"
 
 export default function Nav() {
   const navLink = ({ isActive, isPending }) => 
-    `nav-link ${isPending ? "pending" : isActive ? "fw-bold active text-decoration-underline" : ""
-    }`;
+    `nav-link underlined-hover ${isPending ? "pending" : isActive ? "fw-bold active text-decoration-underline" : ""}`;
 
   return (
     <header>

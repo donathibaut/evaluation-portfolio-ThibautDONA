@@ -56,6 +56,10 @@ h1, h2, h3, h4, h5, h6, strong {
     filter: brightness(1.15);
 }
 
+.underlined-hover:hover {
+    text-decoration: underline;
+}
+
 /* ----@media---- */
 @media all and (max-width : 768px) {
     .info-title {
