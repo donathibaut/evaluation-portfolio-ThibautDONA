@@ -4,7 +4,3 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.card-header:not(.collapsed) .bi-chevron-down {
-    transform: rotate(180deg);
-}

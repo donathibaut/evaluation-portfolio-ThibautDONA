@@ -1,4 +1,4 @@
-/* Import du Font : Nunito Sans */
+/* Font Import : Nunito Sans */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 .App {
@@ -8,6 +8,24 @@
     width: 100%;
 }
 
+.little-page {
+    min-height: 70vh;
+}
+
+.navbar {
+    text-transform: uppercase;
+}
+
+.hero-section__banner {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* ----title---- */
 .hero-section__title {
     font-size: 3em;
 }
@@ -16,10 +34,50 @@
     font-size: 1.5em;
 }
 
+.info-title {
+    font-size: 2em;
+}
+
+.map-title {
+    font-size: 1.5em;
+}
+
 h1, h2, h3, h4, h5, h6, strong {
     font-weight: 600;
 }
 
-li {
-    list-style: none;
+/* ----action---- */
+.card:hover {
+    box-shadow: 0 0 30px rgb(223, 223, 223);
+    background-color: #efefef;
 }
+
+.btn-lighter:hover {
+    filter: brightness(1.15);
+}
+
+/* ----@media---- */
+@media all and (max-width : 768px) {
+    .info-title {
+        font-size: 1.4em;
+    }
+    
+    .hero-section__title {
+        font-size: 2.5em;
+    }
+}
+
+@media all and (max-width : 360px) {
+    .hero-section__title {
+        font-size: 1.5em;
+    }
+
+    .info-title {
+        font-size: 1.3em;
+    }
+
+    .width-phone {
+        max-width: 90%;
+    }
+}
+/* -------- */

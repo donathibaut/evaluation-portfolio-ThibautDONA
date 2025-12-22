@@ -16,9 +16,24 @@
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 5.3em;
 }
 
 h2 {
     font-size: 4em;
+}
+
+/* ----@media---- */
+@media all and (max-width : 360px) {
+    .hero-section__head {
+        text-shadow: 0 0 5px black;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
 }
