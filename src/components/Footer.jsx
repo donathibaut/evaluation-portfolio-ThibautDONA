@@ -31,7 +31,7 @@ export default function Footer() {
                 <div className="address__social-media">
                     <ul className="social-media__list">
                         <li className="footer-li">
-                            <a className="list__icon footer-li__link" href="https://x.com/johnDoe26676287" target="_blank" rel="nofollow" aria-label="lien github">
+                            <a className="list__icon footer-li__link" href="https://github.com/github-john-doe" target="_blank" rel="nofollow" aria-label="lien github">
                                 <i className="bi bi-github"></i>
                             </a>
                         </li>
